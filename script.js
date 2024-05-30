@@ -142,65 +142,65 @@
         setInterval(setNextBackground, 5000);
     })
     
-    let teamImg = document.querySelector(".teamimg");
-    let teamName = document.querySelector(".teamname");
-    let teamJob = document.querySelector(".teamjob");
-    let back = document.querySelector("#back");
-    let front = document.querySelector("#front");
+    // let teamImg = document.querySelector(".teamimg");
+    // let teamName = document.querySelector(".teamname");
+    // let teamJob = document.querySelector(".teamjob");
+    // let back = document.querySelector("#back");
+    // let front = document.querySelector("#front");
 
-    const team = [
-        { 
-            name: "Jessica John",
-            job: "Jouranlist, Activist, Researcher",
-            image: 'images/img2.jpg'
-        },
-        { 
-            name: "Reuben McDonalds",
-            job: "Model, Activist, Lawyer",
-            image: 'images/img6.jpg'
-        },
-        { 
-            name: "Charllote Henry",
-            job: "Designer, Planner, Strategist",
-            image: 'images/img4.png'  
-        }
-    ];
+    // const team = [
+    //     { 
+    //         name: "Jessica John",
+    //         job: "Jouranlist, Activist, Researcher",
+    //         image: 'images/img2.jpg'
+    //     },
+    //     { 
+    //         name: "Reuben McDonalds",
+    //         job: "Model, Activist, Lawyer",
+    //         image: 'images/img6.jpg'
+    //     },
+    //     { 
+    //         name: "Charllote Henry",
+    //         job: "Designer, Planner, Strategist",
+    //         image: 'images/img4.png'  
+    //     }
+    // ];
     
-    function setNextTeam() {
-        const currentTeam = team[currentIndex]
-        teamImg.src = currentTeam.image;
-        teamName.innerHTML = currentTeam.name;
-        teamJob.innerHTML = currentTeam.job;
-        currentIndex = 0;
-    }
-    setNextTeam();
-    document.addEventListener("DOMContentLoaded", () => {
+    // function setNextTeam() {
+    //     const currentTeam = team[currentIndex]
+    //     teamImg.src = currentTeam.image;
+    //     teamName.innerHTML = currentTeam.name;
+    //     teamJob.innerHTML = currentTeam.job;
+    //     currentIndex = 0;
+    // }
+    // setNextTeam();
+    // document.addEventListener("DOMContentLoaded", () => {
         
-        setInterval(setNextTeam, 5000);
-    })
+    //     setInterval(setNextTeam, 5000);
+    // })
 
 
-// Initialize Swiper
-var swiper = new Swiper(".mySwiper", {
-    // Set initial number of slides per view
-    slidesPerView: 3,
-    // Responsive breakpoints
-    breakpoints: {
-        // When window width is <= 768px
-        768: {
-            slidesPerView: 1,
-        },
-        // When window width is <= 992px
-        992: {
-            slidesPerView: 2,
-        },
-    },
-    //Set gp between slides
-    spaceBetween: 30,
-    //Specify autoplay and delay
-    autoplay: {
-        delay: 6000,
-    },
-    //To loop
-    loop: true,
-});
+// // Initialize Swiper
+// var swiper = new Swiper(".mySwiper", {
+//     // Set initial number of slides per view
+//     slidesPerView: 3,
+//     // Responsive breakpoints
+//     breakpoints: {
+//         // When window width is <= 768px
+//         768: {
+//             slidesPerView: 1,
+//         },
+//         // When window width is <= 992px
+//         992: {
+//             slidesPerView: 2,
+//         },
+//     },
+//     //Set gp between slides
+//     spaceBetween: 30,
+//     //Specify autoplay and delay
+//     autoplay: {
+//         delay: 6000,
+//     },
+//     //To loop
+//     loop: true,
+// });
