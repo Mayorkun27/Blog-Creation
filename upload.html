@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Upload</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Offline bootstarp linking -->
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col col-lg-12 col-md-12 col-12 mt-3">
+                <form action="http://localhost:5000/api/v1/blog/uploadBlog" method="POST" enctype="multipart/form-data">
+                    <legend>Blog Post</legend>
+                    <fieldset>
+                        <div class="bg-dark text-light wrapper p-5 d-grid justify-content-center gap-3">
+                            <input type="text" name="Title" placeholder="Title" class="title">
+                            <input type="file" name="File">
+                            <textarea name="Message" cols="50" rows="15"></textarea>
+                            <button class="btn btn-light w-50 mx-auto" type="submit">Upload <i class="fa fa-paper-plane"></i></button>
+                        </div>
+                    </fieldset>
+                </form>            
+            </div>
+        </div>
+    </div>
+</body>
+</html>
